@@ -1,17 +1,6 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 86db5a914a5bc328d46f09cc12b033b3_727792ad622c11f18f065254007bceed
-    ReservedCode1: cApqpNdXF1id8NFx7UQCRLKNB2LfjNawNBvbf50Qi1/JIX+CJQtpAmnJ4QOZG2SE+DWDQdrgDzbq7Jj5mLmMtxvSH9EDG7NPTre43jc3Sga24xxQyJEB75Uz5u4ZAeSdItU6RYzuuj/Hw0eGV0xjrwEJS+ii7sGtKkSfweooGt8eL+zKdJT3jnitecs=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 86db5a914a5bc328d46f09cc12b033b3_727792ad622c11f18f065254007bceed
-    ReservedCode2: cApqpNdXF1id8NFx7UQCRLKNB2LfjNawNBvbf50Qi1/JIX+CJQtpAmnJ4QOZG2SE+DWDQdrgDzbq7Jj5mLmMtxvSH9EDG7NPTre43jc3Sga24xxQyJEB75Uz5u4ZAeSdItU6RYzuuj/Hw0eGV0xjrwEJS+ii7sGtKkSfweooGt8eL+zKdJT3jnitecs=
----
-
 # 一点一滴咖啡店 AI Skill
 
-> 北京科技职业学院 · 一点一滴咖啡店 的 AI 助手 Skill。安装后，AI 助手就能回答关于咖啡店的所有问题——在哪、几点开、有什么好吃的、怎么付钱。
+> 北京科技职业学院 · 一点一滴咖啡店 的 AI 助手 Skill。安装后，AI 助手就能回答关于咖啡店的所有问题——在哪、几点开、有什么好吃的、怎么点餐、怎么付钱。
 
 北科院的隐藏食堂，现在有了自己的 AI 服务。
 
@@ -23,6 +12,7 @@ AIGC:
 |------|----------|
 | 餐厅信息 | "一点一滴咖啡店在哪？""几点开门？" |
 | 招牌菜推荐 | "有什么好吃的？""推荐个下饭菜" |
+| 线上预点餐 | "怎么提前点餐？""能免排队吗？" |
 | 支付方式 | "能刷校园卡吗？""支持微信吗？" |
 | 环境介绍 | "适合自习吗？""能聚餐吗？" |
 
@@ -35,7 +25,7 @@ AIGC:
 把下面这句话发给你的 AI 助手（OpenClaw、Qoder、Cursor、Claude Code 等）：
 
 ```
-帮我安装一点一滴咖啡店 Skill，仓库地址：https://github.com/你的用户名/yidiandi-coffee-skill
+帮我安装一点一滴咖啡店 Skill，仓库地址：https://github.com/cat451814/yidiandi-coffee-skill
 ```
 
 Agent 会自动克隆仓库并安装到 Skill 目录。
@@ -44,7 +34,7 @@ Agent 会自动克隆仓库并安装到 Skill 目录。
 
 ```bash
 # 通用路径（适用于大多数支持 Skill 的 Agent）
-git clone https://github.com/你的用户名/yidiandi-coffee-skill.git \
+git clone https://github.com/cat451814/yidiandi-coffee-skill.git \
   .agents/skills/yidiandi-coffee-skill
 ```
 
@@ -75,15 +65,15 @@ yidiandi-coffee-skill/
 
 ## 当前版本
 
-**v1.0.0** — 静态版
+**v1.1.0** — 线上预点餐版
 
-信息由店主手动维护。更新菜单、营业时间等需要修改 `SKILL.md` 并重新推送仓库。
+已接入「纳食智能点餐」微信小程序，支持顾客在线预点餐、免排队取餐。
 
 ### 后续规划
 
+- [x] 线上预点餐（小程序接入）
 - [ ] 补充 WiFi 信息
 - [ ] v2.0 动态版：接入实时排队取号
-- [ ] v2.0 动态版：在线预点餐到店取
 - [ ] v2.0 动态版：每日特价菜自动更新
 
 ---
@@ -107,4 +97,3 @@ yidiandi-coffee-skill/
 ## 协议
 
 [MIT](LICENSE) © 2026 一点一滴咖啡店
-*（内容由AI生成，仅供参考）*

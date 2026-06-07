@@ -1,15 +1,8 @@
 ---
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 86db5a914a5bc328d46f09cc12b033b3_717acd81622c11f1800a5254002afed2
-    ReservedCode1: 80zauYlB6lLXiKzVtM8Z40ONb9h+QDUDKTiw1dFWAbQfUhkHyr0MGOwp9c28BWqk0RmwiT1X2B5sjou7kLH4SIIK/WluWHeOHDPpF5PzW7GBeW265+RRP2TUlpE6Wv+oYebnna+GGB8VUCt3G9DfLffv+7Tud9wDuQ4vXnkcFrz83sn5Jw13vzQsoMw=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 86db5a914a5bc328d46f09cc12b033b3_717acd81622c11f1800a5254002afed2
-    ReservedCode2: 80zauYlB6lLXiKzVtM8Z40ONb9h+QDUDKTiw1dFWAbQfUhkHyr0MGOwp9c28BWqk0RmwiT1X2B5sjou7kLH4SIIK/WluWHeOHDPpF5PzW7GBeW265+RRP2TUlpE6Wv+oYebnna+GGB8VUCt3G9DfLffv+7Tud9wDuQ4vXnkcFrz83sn5Jw13vzQsoMw=
+name: yidiandi-coffee-skill
+description: 当用户询问关于北京科技职业学院一点一滴咖啡店的问题时使用，包括地址、营业时间、菜单、支付方式、招牌菜推荐、线上预点餐等
+version: 1.1.0
 ---
-
-
 
 # 一点一滴咖啡店 AI Skill
 
@@ -22,10 +15,11 @@ AIGC:
 - 餐厅地址与位置指引
 - 营业时间
 - 招牌菜品推荐与介绍
+- **线上预点餐**（扫码免排队，提前下单到店即取）
 - 支付方式
 - 店内环境与适合场景
 
-> 当前为静态版（v1.0.0），信息由店主手动维护。后续可升级为动态版，接入实时排队、在线点餐等功能。
+> 当前版本 v1.1.0，已接入「纳食智能点餐」小程序，支持线上预点餐。
 
 ## 餐厅详细信息
 
@@ -56,6 +50,26 @@ AIGC:
 | 6 | 农家一碗香 | 五花肉+青椒+豆豉爆炒，锅气十足 |
 | 7 | 外婆菜炒鸡蛋 | 外婆菜独特腌香配嫩滑鸡蛋，简单却惊艳 |
 
+### 线上预点餐
+
+一点一滴咖啡店已接入**「纳食智能点餐」**微信小程序，支持线上预点餐，免排队、到店即取。
+
+**点餐流程：**
+
+1. 打开微信，搜索小程序「**纳食智能点餐**」
+2. 进入后选择「一点一滴咖啡店」
+3. 浏览菜单，选择菜品加入购物车
+4. 确认订单并支付（支持微信支付、校园卡）
+5. 凭取餐码到店取餐，无需排队等待
+
+> 店内也设有扫码点餐牌，到店后可直接扫码下单。标识码：B167572122974。
+
+**点餐小贴士：**
+
+- 课间高峰期建议提前 15-20 分钟下单，到店直接取
+- 招牌菜销量较大，高峰期可能需稍等片刻
+- 如需打包带走，下单时勾选「打包」选项即可
+
 ### 环境与适合场景
 
 - **课间休息**：离教学区近，课间来杯饮品或快速吃个简餐很方便
@@ -79,4 +93,3 @@ AIGC:
 3. 建议关注一点一滴咖啡店的店内公告栏或社群通知
 4. 提示可到店获取联系电话
 5. 如果问题与菜品相关，可以顺势推荐招牌菜
-*（内容由AI生成，仅供参考）*
